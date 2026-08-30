@@ -1,0 +1,7 @@
+Time-Reversal Communications for Low-Complexity ARA User Terminals
+
+This project explores time-reversal (TR) precoding as a way to shift wireless signal-processing complexity from the user terminal to the base station, enabling simpler, lower-power devices for smart agriculture deployments. Battery-powered field sensors, flight-time-limited drones, and remote farm equipment all benefit from receivers that avoid the OFDM equalization overhead conventional systems require — TR moves that burden to the infrastructure side instead.
+
+Using the ARA Wireless Living Lab testbed at Iowa State University, we measure the real uplink multipath channel between a Skylark base station and a user terminal (5 BS antenna elements, 563 MHz center frequency, 24 MHz CSI bandwidth, RRC pulse shaping with a 0.25 roll-off factor). The measured channel impulse response is time-reversed and used as a downlink precoder, allowing multipath components to combine coherently and focus energy at the intended receiver — reducing inter-symbol interference without added UE complexity.
+
+We evaluate the approach through temporal focusing, 16-QAM constellation quality, RMS EVM, and BER, comparing performance with and without TR precoding across a range of SNRs using ARA's real measured channel data (not synthetic models). Results show consistent gains in signal quality and error performance, supporting TR as a practical path toward low-complexity, long-lifetime wireless devices for precision agriculture and rural IoT.
